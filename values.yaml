@@ -1,0 +1,21 @@
+# File paths for the script and entrypoint
+# files:
+#   scriptFile: "scripts/script.py"
+#   entrypointFile: "scripts/entrypoint.sh"
+
+# NodeJS Example
+files:
+  scriptFile: "scripts/script.js"
+  entrypointFile: "scripts/entrypoint.sh"
+
+# Values for CronJob
+cronJob:
+  schedule: "*/5 * * * *"  # Default: Runs every 5 Minutes
+  concurrencyPolicy: Forbid
+  restartPolicy: OnFailure
+  timezone: Asia/Kolkata
+
+# Container details
+container:
+  image: python:3.8
+  command: ["/bin/bash", "/mnt/entrypoint.sh"]
