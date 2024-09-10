@@ -1,0 +1,48 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "properties": {
+        "container": {
+            "properties": {
+                "command": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "image": {
+                    "type": "string"
+                }
+            },
+            "type": "object"
+        },
+        "cronJob": {
+            "properties": {
+                "concurrencyPolicy": {
+                    "type": "string"
+                },
+                "restartPolicy": {
+                    "type": "string"
+                },
+                "schedule": {
+                    "type": "string"
+                },
+                "timezone": {
+                    "type": "string"
+                }
+            },
+            "type": "object"
+        },
+        "files": {
+            "properties": {
+                "entrypointFile": {
+                    "type": "string"
+                },
+                "scriptFile": {
+                    "type": "string"
+                }
+            },
+            "type": "object"
+        }
+    },
+    "type": "object"
+}
