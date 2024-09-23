@@ -3,11 +3,20 @@ entries:
   generic-script-cronjob:
   - apiVersion: v2
     appVersion: "1.0"
-    created: "2024-09-10T03:49:58.09329587+05:30"
+    created: "2024-09-23T23:41:45.811706842+05:30"
+    description: A Helm chart for managing generic script cronjobs.
+    digest: ff57c743e7e60a5527844a9926065b4ddcdd060d3c5d40bd5450676e38c00219
+    name: generic-script-cronjob
+    urls:
+    - generic-script-cronjob-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v2
+    appVersion: "1.0"
+    created: "2024-09-23T23:41:45.808469722+05:30"
     description: A Helm chart for managing generic script cronjobs.
     digest: c7c4b76802e084046bddae638cfafb8f063d060bc6dd9e58c64b8329162438a2
     name: generic-script-cronjob
     urls:
     - generic-script-cronjob-0.1.0.tgz
     version: 0.1.0
-generated: "2024-09-10T03:49:58.091615809+05:30"
+generated: "2024-09-23T23:41:45.806895771+05:30"
