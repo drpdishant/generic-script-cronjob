@@ -17,6 +17,7 @@ spec:
             volumeMounts:
             - name: {{ .Values.volumeName }}
               mountPath: /mnt
+            env: {{ toYaml .Values.container.env | nindent 12 }}          
           restartPolicy: {{ .Values.cronJob.restartPolicy }}
           volumes:
           - name: script-volume

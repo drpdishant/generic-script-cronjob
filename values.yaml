@@ -19,3 +19,16 @@ cronJob:
 container:
   image: python:3.8
   command: ["/bin/bash", "/mnt/entrypoint.sh"]
+  env: 
+  - name: ENVIROMENT
+    value: development
+  # - name: SOURCE_URI
+  #   valueFrom:
+  #     secretKeyRef:
+  #       name: archive-kyc-lead-config
+  #       key: SOURCE_URI
+  # - name: TARGET_URI
+  #   valueFrom:
+  #     secretKeyRef:
+  #       name: archive-kyc-lead-config
+  #       key: SOURCE_URI
